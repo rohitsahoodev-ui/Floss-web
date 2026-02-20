@@ -15,13 +15,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-8"
+          className="mb-8 flex flex-col items-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-floss-pink mb-8">
-            <Sparkles className="w-3 h-3" />
-            The Next Generation Discord Bot
-          </div>
-          
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -36,6 +31,11 @@ export default function Hero() {
             />
           </motion.div>
 
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-floss-pink mb-8">
+            <Sparkles className="w-3 h-3" />
+            The Next Generation Discord Bot
+          </div>
+          
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 leading-[0.9]">
             FLOSS — THE <br />
             <span className="text-gradient">ULTIMATE</span> EXPERIENCE
