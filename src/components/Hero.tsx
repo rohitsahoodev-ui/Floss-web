@@ -3,7 +3,7 @@ import { Plus, LayoutDashboard, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-floss-pink/10 blur-[120px] rounded-full animate-pulse" />

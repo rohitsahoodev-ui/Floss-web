@@ -13,10 +13,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "#home" },
     { name: "Features", href: "#features" },
     { name: "Commands", href: "#commands" },
-    { name: "Support", href: "#" },
+    { name: "Support", href: "https://discord.gg/eXjCRtQuz" },
   ];
 
   return (
@@ -41,6 +41,8 @@ export default function Navbar() {
             <a 
               key={link.name} 
               href={link.href} 
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
             >
               {link.name}
@@ -91,6 +93,8 @@ export default function Navbar() {
                 <a 
                   key={link.name} 
                   href={link.href} 
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="text-lg font-medium text-gray-400"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

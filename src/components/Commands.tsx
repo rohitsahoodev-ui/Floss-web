@@ -33,9 +33,14 @@ export default function Commands() {
           <h2 className="text-4xl font-bold mb-4">Powerful <span className="text-gradient">Commands</span></h2>
           <p className="text-gray-400">The prefix is <span className="text-floss-pink font-mono font-bold">!!</span>. Click any command to copy it.</p>
         </div>
-        <button className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-sm font-medium">
+        <a 
+          href="https://discord.gg/eXjCRtQuz"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-sm font-medium"
+        >
           View All Commands
-        </button>
+        </a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
