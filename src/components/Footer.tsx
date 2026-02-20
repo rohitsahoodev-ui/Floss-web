@@ -32,7 +32,6 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-500">
               <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
               <li><a href="#commands" className="hover:text-white transition-colors">Commands</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Dashboard</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Premium</a></li>
             </ul>
           </div>
@@ -64,9 +63,19 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-4">
-          <p className="text-gray-600 text-xs">
-            © {new Date().getFullYear()} Floss Bot. Not affiliated with Discord Inc.
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-gray-600 text-xs">
+              © {new Date().getFullYear()} Floss Bot. Not affiliated with Discord Inc.
+            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-gray-500 text-[10px] font-medium tracking-tight">
+                Web made with <span className="text-floss-pink">❤️</span> by <a href="https://rsdev.fun" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-floss-pink transition-colors">@rsdev.fun</a>
+              </p>
+              <p className="text-gray-500 text-[10px] font-medium tracking-tight">
+                Floss made with <span className="text-floss-pink">❤️</span> by <span className="text-gray-400 hover:text-floss-pink transition-colors cursor-default">@mr_ambanigaming</span>
+              </p>
+            </div>
+          </div>
           <div className="flex gap-6 text-xs text-gray-600">
             <a href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gray-400 transition-colors">Cookies</a>
