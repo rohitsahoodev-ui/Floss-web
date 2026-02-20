@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-discord-dark: #313338;
+  --color-discord-black: #1e1f22;
+  --color-floss-pink: #ff00ff;
+  --color-floss-purple: #7000ff;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-white selection:bg-floss-pink/30;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .glow-pink {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  }
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(112, 0, 255, 0.3);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-floss-pink to-floss-purple;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
